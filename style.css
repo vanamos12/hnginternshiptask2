@@ -1,10 +1,19 @@
+:root{
+    --main-color:#FFEE30;
+    --similar-color:#B3A617;
+    --main-blue-color:#5B3BB3;
+    --similar-blue-color:#A787FF;
+    --background-color:#181818;
+    --background-container-color:#f3f3f3;
+    --background-sub-container-color:#ededed;
+}
 * {
     margin:0;
     padding:0;
 }
 
 body{
-    background:#181818;
+    background:var(--background-color);
     font-family:'Lato', helvetica, arial, sans-serif;
     font-size:16px;
     color:#222;
@@ -17,8 +26,8 @@ body{
 
 .sub-container-header{
     padding: 25px 35px;
-    border-bottom: 2px solid #cf8a05;
-    background: #ededed;
+    border-bottom: 2px solid var(--main-color);
+    background: var(--background-sub-container-color);
     display:flex;
     justify-content: space-evenly;
 }
@@ -28,6 +37,139 @@ body{
 }
 
 .container{
-    background:#f3f3f3;
+    background:var(--background-container-color);
     padding:20px;
+}
+
+.container .user-informations div{
+    position:relative;
+    margin:30px;
+}
+
+.container .user-informations div img{
+    position:absolute;
+    top:-10px;
+    left:-35px;
+}
+h2{
+    position:relative;
+    margin-left:25px;
+    text-transform:capitalize;
+    margin-top:20px;
+}
+h2::before{
+    content:'';
+    width:25px;
+    height:25px;
+    background-color: var(--similar-color);
+    border-radius: 50%;
+    position:absolute;
+    top:-1px;
+    left:-25px;
+}
+
+section.experiences{
+    display:flex;
+    justify-content: flex-start;
+    margin-top:20px;
+}
+
+section.experiences .date{
+    width: 25%;
+    margin-right:2%;
+   
+}
+
+section.experiences .content{
+    width:70%;
+    margin-left:3%;
+}
+
+section.experiences .content ul{
+    margin-left: 30px;
+
+}
+
+section.academic{
+    display:flex;
+    justify-content: flex-start;
+    margin-top:20px;
+}
+
+section.academic .date{
+    width: 25%;
+    margin-right:2%;
+   
+}
+
+section.academic .content{
+    width:70%;
+    margin-left:3%;
+    color:var(--similar-blue-color);
+}
+
+section.awards{
+    display:flex;
+    justify-content: flex-start;
+    margin-top:20px;
+}
+
+section.awards .date{
+    width: 25%;
+    margin-right:2%;
+   
+}
+
+section.awards .content{
+    width:70%;
+    margin-left:3%;
+    color:var(--similar-blue-color);
+}
+
+section.languages{
+    display:flex;
+    justify-content: flex-start;
+    margin-top:20px;
+}
+
+section.languages .language{
+    width: 25%;
+    margin-right:2%;
+   
+}
+
+section.languages .proficiency{
+    width:70%;
+    margin-left:3%;
+    color:var(--similar-blue-color);
+}
+
+section.activities{
+    display:flex;
+    justify-content: flex-start;
+    margin-top:20px;
+}
+
+section.activities .date{
+    width: 25%;
+    margin-right:2%;
+   
+}
+
+section.activities .activitie{
+    width:70%;
+    margin-left:3%;
+    color:var(--similar-blue-color);
+}
+.skills ul {
+    margin-left: 50px;
+    margin-top : 10px;
+}
+
+.main-blue-color{
+    color: var(--main-blue-color);
+}
+
+.similar-blue-color{
+    color: var(--similar-blue-color);
 }
